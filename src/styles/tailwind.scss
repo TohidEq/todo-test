@@ -2,3 +2,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "tailwindcss/variants";
+
+@import "./addTodo.scss";
+@import "./listTodo.scss";
+
+.App {
+  @apply bg-light-1 min-h-screen;
+
+  .page {
+    @apply max-w-md mx-auto;
+  }
+}

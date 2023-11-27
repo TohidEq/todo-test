@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        white: "#EEF5FF",
+        white: "#F5CCA0",
         black: "#0F0F0F",
-        "light-1": "#9EB8D9",
-        "light-2": "#7C93C3",
-        "dark-1": "#A25772",
+        "light-1": "#E48F45",
+        "light-2": "#994D1C",
+        "dark-1": "#6B240C",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

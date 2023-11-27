@@ -1,0 +1,8 @@
+.todo-list {
+  @extend .page;
+  // @apply bg-light-2;
+
+  .todo-item {
+    @apply bg-light-2 my-2;
+  }
+}

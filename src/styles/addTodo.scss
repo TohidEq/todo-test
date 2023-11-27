@@ -1,0 +1,7 @@
+.todo-add {
+  @apply bg-dark-1/80;
+
+  .todo-add-form {
+    @extend .page;
+  }
+}

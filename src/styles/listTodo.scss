@@ -18,7 +18,7 @@
         @apply h-5 flex gap-x-1;
         button {
           @extend .anti-f-v2;
-          @apply h-5 w-5 m-0  bg-light-2 rounded-sm overflow-hidden;
+          @apply h-5 w-5 m-0  bg-light-2/50 rounded-sm overflow-hidden text-dark-1;
         }
       }
     }

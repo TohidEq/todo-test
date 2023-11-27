@@ -7,7 +7,7 @@
 @import "./listTodo.scss";
 
 .App {
-  @apply bg-light-2 min-h-screen;
+  @apply bg-light-2 min-h-screen text-black;
 
   .page {
     @apply max-w-md mx-auto px-1;

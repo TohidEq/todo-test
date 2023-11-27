@@ -1,8 +1,26 @@
 .todo-list {
-  @extend .page;
+  @extend .page, .my-pt;
   // @apply bg-light-2;
 
+  h3 {
+    @apply text-xl text-center bg-light-1 py-2;
+  }
+
   .todo-item {
-    @apply bg-light-2 my-2;
+    @apply bg-light-1 
+      mt-2
+      p-1;
+
+    .btns {
+      @apply flex justify-between;
+
+      .btns-child {
+        @apply h-5 flex gap-x-1;
+        button {
+          @extend .anti-f-v2;
+          @apply h-5 w-5 m-0  bg-light-2 rounded-sm overflow-hidden;
+        }
+      }
+    }
   }
 }

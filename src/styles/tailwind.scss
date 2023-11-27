@@ -7,9 +7,58 @@
 @import "./listTodo.scss";
 
 .App {
-  @apply bg-light-1 min-h-screen;
+  @apply bg-light-2 min-h-screen;
 
   .page {
-    @apply max-w-md mx-auto;
+    @apply max-w-md mx-auto px-1;
+  }
+
+  .my-pt {
+    @apply pt-16;
+  }
+
+  .anti-f-v {
+    @apply rounded-none
+    border-2 border-transparent
+    outline-none
+    focus-visible:border-black/80 transition-all duration-150;
+    &:hover {
+      @apply border-black/80;
+      svg {
+        @apply scale-110;
+      }
+    }
+    &:focus-visible {
+      @apply border-black;
+      svg {
+        @apply scale-110;
+      }
+    }
+    &:active {
+      @apply border-black;
+      svg {
+        @apply scale-95;
+      }
+    }
+  }
+
+  .anti-f-v2 {
+    @apply border-2 border-transparent
+    outline-none
+    transition-all duration-150;
+    svg {
+      @apply transition-all duration-150;
+    }
+    &:hover,
+    &:focus-visible {
+      svg {
+        @apply scale-125;
+      }
+    }
+    &:active {
+      svg {
+        @apply scale-95;
+      }
+    }
   }
 }

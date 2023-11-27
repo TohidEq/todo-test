@@ -1,6 +1,7 @@
 "use client";
+import { MdDeleteForever, MdEdit } from "react-icons/md";
+import { IoIosMore } from "react-icons/io";
 
-import { IoIosRemoveCircle } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import { useState, useTransition, ChangeEvent, MouseEvent } from "react";
 import Link from "next/link";
@@ -42,9 +43,19 @@ export default function TodoItem(todo: Todo) {
     <div className="todo-item" style={{ opacity: !isMutating ? 1 : 0.5 }}>
       <p className="title">{todo.title}</p>
       <div className="btns">
-        <button onClick={handleDelete} disabled={isPending} className="btn">
-          <IoIosRemoveCircle />
-        </button>
+        <div className="btns-child">
+          <button onClick={handleDelete} disabled={isPending} className="btn">
+            <MdDeleteForever />
+          </button>
+        </div>
+        <div className="btns-child">
+          <button /*onClick={ - }*/ disabled={true} className="btn">
+            <IoIosMore />
+          </button>
+          <button /*onClick={ - }*/ disabled={true} className="btn">
+            <MdEdit />
+          </button>
+        </div>
       </div>
     </div>
   );
